@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>P4_@media的引入方式</title>
+	<style type="text/css">
+			
+		body{
+			background-color: #000000;
+		}
+		/* 直接引入 */
+		@media screen and (max-width: 960px) and (min-width: 700px){
+			body{
+				background-color: red;
+			}
+		}
+		/* @media screen and (max-width: 700px){
+			body{
+				background-color: blue;
+			}
+		} */
+	</style>
+	<!-- 外接式 -->
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 700px)" href="css/index_max_700.css"/>
+    <!-- all:代表所有设备 -->
+	<!-- <link rel="stylesheet" type="text/css" media="screen and (max-width: 700px)" href="css/index_min_900.css"/> -->
+	
+</head>
+<body>
+	
+	
+</body>
+</html>

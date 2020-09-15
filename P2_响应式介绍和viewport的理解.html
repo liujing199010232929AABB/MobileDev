@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta:vp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>P2_响应式介绍和viewport的理解</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        // viewport
+        // 视口 => 视觉的窗口 虚拟
+        // 如果部设置viewport,移动设备的浏览器的viewport默认是980px,
+
+        // css中1px等于设备的1px
+        //     不关心pc设备，针对的是移动设备
+        //     在早期移动设备，iPhone3 分辨率320*480，当时1px = 屏幕的物理像素
+        //     随着技术的发展，移动设备 iPhone4 苹果推出一个Reatina屏幕，分辨率提高了一倍，分辨率提高了一倍，变成640*960 但是屏幕尺寸没有发生变化 当时1px = 2个屏幕的物理像素
+
+        //     在移动浏览器或pc浏览器window对象 devicePixelRatio属性 dpr
+        //     设备物理像素/独立像素(px)
+        //     devicePixelRatio = 设备物理像素/独立像素(px); 独立像素：网页上面设置的像素
+
+        ppk大神的关于三个viewport的理念
+        1.layout viewport //document.documentElement.clientWidth 来获取。
+        2.visual viewport //浏览器可视区域的大小 window.innerWidth
+        3.ideal viewport 理想的视口 移动端响应式//
+
+        // 移动设备默认的viewport是layout viewport，也就是那个比屏幕要宽的viewport，但在进行移动设备网站的开发时，我们需要的是ideal viewport。那么怎么才能得到ideal viewport呢？这就该轮到meta标签出场了。
+
+    </script>
+</body>
+</html>

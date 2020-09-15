@@ -1,0 +1,39 @@
+#box {
+  width: 100%;
+  padding: 20px;
+}
+#box h3 {
+  color: #ff6700;
+  border: 1px solid #ff6700;
+  width: 6rem;
+  height: 300px;
+}
+#box h3 span {
+  font-size: 20px;
+  color: #666;
+}
+.active {
+  border: 1px solid #ff6700;
+  width: 6rem;
+  height: 300px;
+}
+a {
+  color: darkgoldenrod;
+}
+a:hover {
+  color: #fff;
+}
+.btn-danger {
+  background-color: red;
+}
+.btn-success {
+  background-color: green;
+}
+.btn-info {
+  background-color: lightblue;
+}
+@media screen and (min-width:768px)  {
+  body {
+    background-color: blue;
+  }
+}

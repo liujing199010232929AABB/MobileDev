@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>P11_rem单位的介绍</title>
+	<style>
+			
+		html{
+			font-size: 100px;
+			/* 1rem = 100px */
+		}
+		.box{
+			font-size: 0.2rem;
+			width: 2rem;
+			height: 2rem;
+			background-color: #FF6700;
+        }
+        h3{
+            /* 1em = 20px; */
+            font-size:20px;
+            width:10em;
+            height:10em;
+        }
+	</style>
+</head>
+<body>
+    
+    <!-- 对比pc和m端的设计稿，看看有什么区别，通常都会使用flex布局，宽度尽量用百分比，间距，高度，字体大小 使用em -->
+	<!-- 相对值： % em  rem  px -->
+	<!-- 
+	 
+	1.% 相对于父元素自身大小进行控制
+	缺点：高度不好控制
+	2.em 相对于当前容器的字体进行变化
+		当前容器的字体大小为20px,1em = 20px
+	3.rem 相对于root(html)的字体大小进行变化
+		当前根元素的字体大小为20px,1rem = 20px
+	 -->
+	 
+	 <!-- 如何使用rem进行适配 -->
+	 <!-- 
+		1.字体大小
+			根元素的字体来定
+			
+		2.适配原理
+			将px转换成rem,动态修改html的font-size适配
+		-->
+	 
+	 <div class="box">
+		<h3>Hello world</h3> 
+	 </div>
+
+	
+</body>
+</html>

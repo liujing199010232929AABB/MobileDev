@@ -1,0 +1,69 @@
+
+// 1.定义变量
+@baseColor: #ff6700;
+@width: 300px;
+@height: 300px;
+
+// 1rem = 50px 300px =  6rem
+@base: 100*(375/750);
+.px2rem(@name,@px){
+	@{name}: @px/@base*1rem;
+}
+
+/* .active{
+    border: 1px solid @baseColor;
+    width: @width;
+    height: @height;
+}
+h3{
+	color:@baseColor;
+	.active;
+} */
+
+#box{
+	width: 100%;
+	padding: 20px;
+	h3{
+		color: @baseColor;
+		.active;
+		span{
+			font-size: 20px;
+		}
+	}
+}
+
+.active{
+    border: 1px solid @baseColor;
+    .px2rem(width,300);
+    height: @height;
+}
+
+a{
+	color: darkgoldenrod;
+	&:hover{
+		color: darkmagenta;
+	}
+}
+.btn{
+	&-danger{
+		background-color: red;
+	}
+	&-success{
+		background-color: green;
+	}
+	&-warning{
+		background-color: #ff6700;
+	}
+}
+
+
+
+
+
+@min768:~"screen and (min-width: 768px)";
+body{
+	@media @min768{
+		background-color: darkcyan;
+	}
+}
+
